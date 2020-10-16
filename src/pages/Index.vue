@@ -3,7 +3,7 @@
     <section class="container mx-auto">
       <div class="subheader">
         <h1>
-          Welcome to Buildwith IONOS
+          Welcome to BuildWith IONOS
         </h1>
         <p>
           Get your web project live in seconds
@@ -24,8 +24,8 @@
             >
           </h1>
           <div class="text-xl md:text-3xl text-left font-light mb-8">
-            Use Buildwith IONOS to get your next web project live in seconds.
-            Try yourself by clicking on <b>Ship to IONOS</b>.
+            Use BuildWith IONOS to get your next web project live in seconds.
+            Try yourself by clicking on <b>Drop to IONOS.space</b>.
           </div>
           <a
             class="self-center md:self-start pb-8 md:pb-0"
@@ -34,9 +34,9 @@
             target="_blank"
           >
             <button
-              class="text-white font-bold rounded-full bg-black inline-flex items-center shadow-lg focus:outline-none px-8 my-6 py-4"
+              class="text-white font-bold rounded-full bg-blue-600 inline-flex items-center shadow-lg focus:outline-none px-8 my-6 py-4"
             >
-              <svg
+              <!--svg
                 class="fill-current text-white w-4 h-4 mr-2"
                 role="img"
                 aria-hidden="true"
@@ -46,8 +46,8 @@
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   xlink:href="/icons.svg#icon-ship"
                 />
-              </svg>
-              <span>Ship to IONOS</span>
+              </svg-->
+              <span>Drop to IONOS.space</span>
             </button>
           </a>
         </div>
@@ -68,16 +68,10 @@
           class="max-w-sm rounded-lg overflow-hidden shadow-lg px-2 py-4 m-0 md:m-4 bg-gray-200"
         >
           <picture class="w-full">
-            <source
-              srcset="@images/connect-your-repository.webp"
-              type="image/webp"
-            />
-            <source
-              srcset="@images/connect-your-repository.webp.png"
-              type="image/png"
-            />
+            <source srcset="@images/stage-01.webp" type="image/webp" />
+            <source srcset="@images/stage-01.webp.png" type="image/png" />
             <g-image
-              src="@images/connect-your-repository.webp"
+              src="@images/stage-01.webp"
               fit="contain"
               alt="Connect your repository"
             />
@@ -97,16 +91,10 @@
           class="max-w-sm rounded-lg overflow-hidden shadow-lg px-2 py-4 my-4 md:mx-4 bg-gray-200"
         >
           <picture class="w-full">
-            <source
-              srcset="@images/setup-your-project.webp"
-              type="image/webp"
-            />
-            <source
-              srcset="@images/setup-your-project.webp.png"
-              type="image/png"
-            />
+            <source srcset="@images/stage-02.webp" type="image/webp" />
+            <source srcset="@images/stage-02.webp.png" type="image/png" />
             <g-image
-              src="@images/setup-your-project.webp"
+              src="@images/stage-02.webp"
               fit="contain"
               alt="Setup your project"
             />
@@ -125,10 +113,10 @@
           class="max-w-sm rounded-lg overflow-hidden shadow-lg px-2 py-4 m-0 md:m-4 bg-gray-200"
         >
           <picture class="w-full">
-            <source srcset="@images/ship-to-IONOS.webp" type="image/webp" />
-            <source srcset="@images/ship-to-IONOS.webp.png" type="image/png" />
+            <source srcset="@images/stage-03.webp" type="image/webp" />
+            <source srcset="@images/stage-03.webp.png" type="image/png" />
             <g-image
-              src="@images/ship-to-IONOS.webp"
+              src="@images/stage-03.webp"
               fit="contain"
               alt="Ship to IONOS"
             />
@@ -151,7 +139,7 @@
         Hit the ground running
       </h2>
       <p>
-        Setting up your next project with Buildwith IONOS brings up essential
+        Setting up your next project with BuildWith IONOS brings up essential
         features just from the beginning.
       </p>
       <div class="pb-8 md:pb-16">
@@ -177,7 +165,7 @@
               </div>
               <div class="ml-4 md:mb-8">
                 <h3>
-                  Buildwith IONOS makes it simple
+                  BuildWith IONOS makes it simple
                 </h3>
                 <p>
                   Publish modern web projects right from your git repository.
@@ -431,7 +419,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Home",
-  },
+    title: "Home"
+  }
 };
 </script>
