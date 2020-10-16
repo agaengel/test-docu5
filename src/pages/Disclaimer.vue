@@ -49,6 +49,8 @@
         <p>
           A legal compliance check is outstanding.
         </p>
+        <h3>Privacy note</h3>
+        <p>To get more insights during the IONOS internal test phase we enabled error logging and tracing via <a href="https://sentry.io" target="_blank" rel="noopener">sentry.io</a>.</p>
         <h3>General</h3>
         <p>
           BuildWith IONOS is provided "as is" and you use the application at
