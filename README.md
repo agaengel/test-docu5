@@ -1,13 +1,4 @@
-# Buildwith IONOS Starter
-
-## Features
-
-* Gridsome
-* Tailwindcss
-* SCSS
-* Markdown
-* Tags
-* Blog
+# BuildWith IONOS Starter
 
 ## Install
 

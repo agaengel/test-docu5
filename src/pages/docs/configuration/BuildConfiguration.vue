@@ -3,18 +3,18 @@
     <section class="container mx-auto">
       <div class="subheader">
         <h1>Project Build Configuration</h1>
-        <p>How Buildwith Ionos handels the build configuration for a project</p>
+        <p>How BuildWith Ionos handels the build configuration for a project</p>
       </div>
       <div class="content">
-        <h2>Buildwith Ionos uses <a href="https://github.com/features/actions" target="_blank" rel="noopener">Github actions</a> to process the
+        <h2>BuildWith Ionos uses <a href="https://github.com/features/actions" target="_blank" rel="noopener">Github actions</a> to process the
           building of projects
           and deploys the
           result to a Webspace.</h2>
-        <p>When a new Project is created Buildwith Ionos needs a buildconfiguration to generate the github actions <a
+        <p>When a new Project is created BuildWith Ionos needs a buildconfiguration to generate the github actions <a
           href="https://docs.github.com/en/free-pro-team@latest/actions/reference#workflow-syntax" target="_blank" rel="noopener">workflow
           file</a>.<br>
           A <span class="font-mono">.ionos.yaml</span> in the git repository will be used if present.<br>
-          If no configruation is provided in the repository Buildwith Ionos tries to identify the buildconfiguration.<br>
+          If no configruation is provided in the repository BuildWith Ionos tries to identify the buildconfiguration.<br>
           When this is not possible you can select a build template suitable for the project.
         </p>
         <p>The following Information should help you to generate a <span class="font-mono">.ionos.yaml</span> for a repository.</p>

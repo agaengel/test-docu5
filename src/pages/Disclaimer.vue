@@ -7,7 +7,7 @@
         </h1>
         <p>
           This version of
-          <a href="https://buildwith.ionos.com/">Buildwith IONOS</a> is bleeding
+          <a href="https://buildwith.ionos.com/">BuildWith IONOS</a> is bleeding
           edge and is focused on functionality first.
         </p>
       </div>
@@ -51,7 +51,7 @@
         </p>
         <h3>General</h3>
         <p>
-          Buildwith IONOS is provided "as is" and you use the application at
+          BuildWith IONOS is provided "as is" and you use the application at
           your own risk.
         </p>
       </div>

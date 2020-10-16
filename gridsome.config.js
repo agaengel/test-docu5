@@ -2,7 +2,7 @@ const {slugify} = require("gridsome/lib/utils");
 const options = {
     default: {
         manifestOptions: {
-            short_name: "Buildwith IONOS",
+            short_name: "BuildWith IONOS",
             description: "Get your web project live in seconds",
             display: "standalone",
             background_color: "#f7fafc",
@@ -26,7 +26,7 @@ const options = {
 };
 
 module.exports = {
-    siteName: "Buildwith IONOS",
+    siteName: "BuildWith IONOS",
     plugins: [
         {
             use: 'gridsome-plugin-brotli',
