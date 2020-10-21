@@ -149,6 +149,11 @@ module.exports = {
         //   "default-src": ["self"],
         //   "script-src": ["self"],
         // },
+        customContent: {
+          order: "after",
+          content: "ErrorDocument 404 404.html"
+        },
+        disableDirectoryIndex: true,
         disableServerSignature: true,
         forceHttps: true,
         pingable: false,
