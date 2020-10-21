@@ -40,4 +40,4 @@ Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 	Header set X-XSS-Protection "1; mode=block"
 </IfModule>
 
-ErrorDocument 404 404.html
+ErrorDocument 404 /404.html

@@ -151,7 +151,7 @@ module.exports = {
         // },
         customContent: {
           order: "after",
-          content: "ErrorDocument 404 404.html"
+          content: "ErrorDocument 404 /404.html"
         },
         disableDirectoryIndex: true,
         disableServerSignature: true,
