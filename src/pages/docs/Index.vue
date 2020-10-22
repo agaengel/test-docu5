@@ -2,12 +2,8 @@
   <Layout>
     <section class="container mx-auto">
       <div class="subheader">
-        <h1>
-          Get started in seconds
-        </h1>
-        <p>
-          Step-by-Step Guide
-        </p>
+        <h1>Get started in seconds</h1>
+        <p>Step-by-Step Guide</p>
       </div>
       <div class="content">
         <h2>Getting started with BuildWith IONOS</h2>
@@ -162,7 +158,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Get started"
-  }
-};
+    title: 'Get started',
+  },
+}
 </script>

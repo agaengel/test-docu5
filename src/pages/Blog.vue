@@ -2,12 +2,8 @@
   <Layout>
     <section class="container mx-auto">
       <div class="subheader">
-        <h1>
-          Blog
-        </h1>
-        <p>
-          Get inspired
-        </p>
+        <h1>Blog</h1>
+        <p>Get inspired</p>
       </div>
       <div class="content">
         <div class="flex flex-wrap -mx-2">
@@ -20,23 +16,32 @@
             <div class="bg-white overflow-hidden rounded-lg shadow-lg flex-1">
               <!-- card header -->
               <g-link
-                  class="relative overflow-hidde items-stretch"
-                  :to="entry.node.type==='sample'?entry.node.samplepath:entry.node.path"
+                class="relative overflow-hidde items-stretch"
+                :to="
+                  entry.node.type === 'sample'
+                    ? entry.node.samplepath
+                    : entry.node.path
+                "
               >
-                  <picture class="flex-1">
-                    <g-image
-                        :alt="entry.node.image_caption"
-                        :src="entry.node.image"
-                    />
-                  </picture>
+                <picture class="flex-1">
+                  <g-image
+                    :alt="entry.node.image_caption"
+                    :src="entry.node.image"
+                  />
+                </picture>
               </g-link>
               <!-- card content -->
               <div class="p-8">
                 <h2>
                   <g-link
-                      class="block hover:text-pink-500"
-                      :to="entry.node.type==='sample'?entry.node.samplepath:entry.node.path"
-                    >{{ entry.node.type==='sample'?"Sample: ":''}}{{ entry.node.title }}</g-link
+                    class="block hover:text-pink-500"
+                    :to="
+                      entry.node.type === 'sample'
+                        ? entry.node.samplepath
+                        : entry.node.path
+                    "
+                    >{{ entry.node.type === 'sample' ? 'Sample: ' : ''
+                    }}{{ entry.node.title }}</g-link
                   >
                 </h2>
                 <div class="flex flex-col text-base md:flex mb-4">
@@ -58,9 +63,9 @@
 <script>
 export default {
   metaInfo: {
-    title: "Blog",
+    title: 'Blog',
   },
-};
+}
 </script>
 
 <page-query>
@@ -86,5 +91,4 @@ query {
     }
   }
 }
-
 </page-query>

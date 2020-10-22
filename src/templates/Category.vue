@@ -16,30 +16,30 @@
 </template>
 
 <page-query>
-  query($id: ID!) {
-    category(id: $id) {
-      title
-      belongsTo {
-        edges {
-          node {
-            ... on Blog {
-              id
-              title
-              path 
-              humanTime : created(format:"Do MMMM YYYY")
-              datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
-            }
+query($id: ID!) {
+  category(id: $id) {
+    title
+    belongsTo {
+      edges {
+        node {
+          ... on Blog {
+            id
+            title
+            path
+            humanTime: created(format: "Do MMMM YYYY")
+            datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
           }
         }
       }
-    } 
+    }
   }
+}
 </page-query>
 
 <script>
 export default {
   metaInfo: {
-    title: "Categories",
+    title: 'Categories',
   },
-};
+}
 </script>

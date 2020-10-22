@@ -1,157 +1,157 @@
-const { slugify } = require("gridsome/lib/utils");
+const { slugify } = require('gridsome/lib/utils')
 const options = {
   default: {
     manifestOptions: {
-      short_name: "BuildWith IONOS",
-      description: "Get your web project live in seconds",
-      display: "standalone",
-      background_color: "#f7fafc",
-      theme_color: "#003D8F",
+      short_name: 'BuildWith IONOS',
+      description: 'Get your web project live in seconds',
+      display: 'standalone',
+      background_color: '#f7fafc',
+      theme_color: '#003D8F',
       gcm_sender_id: undefined,
-      start_url: "/",
-      categories: ["business", "productivity"],
-      lang: "en-US",
-      dir: "auto"
+      start_url: '/',
+      categories: ['business', 'productivity'],
+      lang: 'en-US',
+      dir: 'auto',
     },
-    appleMobileWebAppStatusBarStyle: "default",
-    manifestPath: "manifest.json",
-    icon: { appleMaskIcon: { url: "./favicon.png" } },
-    msTileColor: "#f7fafc",
+    appleMobileWebAppStatusBarStyle: 'default',
+    manifestPath: 'manifest.json',
+    icon: { appleMaskIcon: { url: './favicon.png' } },
+    msTileColor: '#f7fafc',
     workboxOptions: {
-      cacheId: "buildwith-pwa",
-      globPatterns: ["assets/@(js|css)/*", "index.html"],
-      skipWaiting: true
-    }
-  }
-};
+      cacheId: 'buildwith-pwa',
+      globPatterns: ['assets/@(js|css)/*', 'index.html'],
+      skipWaiting: true,
+    },
+  },
+}
 
 module.exports = {
-  siteName: "BuildWith IONOS",
+  siteName: 'BuildWith IONOS',
   plugins: [
     {
-      use: "gridsome-plugin-brotli",
+      use: 'gridsome-plugin-brotli',
       options: {
-        extensions: ["css", "html", "js", "svg", "json"]
-      }
+        extensions: ['css', 'html', 'js', 'svg', 'json'],
+      },
     },
     {
-      use: "gridsome-plugin-tailwindcss",
+      use: 'gridsome-plugin-tailwindcss',
       options: {
-        tailwindConfig: "./tailwind.config.js",
+        tailwindConfig: './tailwind.config.js',
         purgeConfig: {},
         presetEnvConfig: {},
         shouldPurge: true,
         shouldImport: true,
         shouldTimeTravel: true,
-        shouldPurgeUnusedKeyframes: true
-      }
+        shouldPurgeUnusedKeyframes: true,
+      },
     },
     {
-      use: "gridsome-source-static-meta",
+      use: 'gridsome-source-static-meta',
       options: {
-        path: "settings/*.json"
-      }
+        path: 'settings/*.json',
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "Author",
-        path: "./content/author/*.md"
-      }
+        typeName: 'Author',
+        path: './content/author/*.md',
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "SampleTag",
-        path: "./content/sampleTags/*.json"
-      }
+        typeName: 'SampleTag',
+        path: './content/sampleTags/*.json',
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "Blog",
-        path: ["./content/blog/**/*.md", "./content/samples/**/*.md"],
+        typeName: 'Blog',
+        path: ['./content/blog/**/*.md', './content/samples/**/*.md'],
         refs: {
           author: {
-            typeName: "Author",
-            create: true
+            typeName: 'Author',
+            create: true,
           },
           tags: {
-            typeName: "Tag",
-            create: true
+            typeName: 'Tag',
+            create: true,
           },
           category: {
-            typeName: "Category",
-            create: true
-          }
-        }
-      }
+            typeName: 'Category',
+            create: true,
+          },
+        },
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "BuildConfigSetup",
-        path: "./content/buildConfiguration/setup/*.json"
-      }
+        typeName: 'BuildConfigSetup',
+        path: './content/buildConfiguration/setup/*.json',
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "BuildConfigPrepare",
-        path: "./content/buildConfiguration/prepare/*.json"
-      }
+        typeName: 'BuildConfigPrepare',
+        path: './content/buildConfiguration/prepare/*.json',
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "BuildConfigBuild",
-        path: "./content/buildConfiguration/build/*.json"
-      }
+        typeName: 'BuildConfigBuild',
+        path: './content/buildConfiguration/build/*.json',
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "BuildTemplate",
-        path: "./content/buildConfiguration/template/*.json",
+        typeName: 'BuildTemplate',
+        path: './content/buildConfiguration/template/*.json',
         refs: {
-          setup_ref: "BuildConfigSetup",
-          prepare_ref: "BuildConfigPrepare",
-          build_ref: "BuildConfigBuild"
-        }
-      }
+          setup_ref: 'BuildConfigSetup',
+          prepare_ref: 'BuildConfigPrepare',
+          build_ref: 'BuildConfigBuild',
+        },
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: "Sample",
-        path: "./content/samples/**/*.md",
+        typeName: 'Sample',
+        path: './content/samples/**/*.md',
         refs: {
           author: {
-            typeName: "Author",
-            create: true
+            typeName: 'Author',
+            create: true,
           },
           tags: {
-            typeName: "SampleTag",
-            create: true
+            typeName: 'SampleTag',
+            create: true,
           },
           category: {
-            typeName: "SampleCategory",
-            create: true
+            typeName: 'SampleCategory',
+            create: true,
           },
-          template_ref: "BuildTemplate"
-        }
-      }
+          template_ref: 'BuildTemplate',
+        },
+      },
     },
     {
-      use: "gridsome-plugin-htaccess",
+      use: 'gridsome-plugin-htaccess',
       options: {
         // contentSecurityPolicy: {
         //   "default-src": ["self"],
         //   "script-src": ["self"],
         // },
         customContent: {
-          order: "after",
-          content: "ErrorDocument 404 /404.html"
+          order: 'after',
+          content: 'ErrorDocument 404 /404.html',
         },
         disableDirectoryIndex: true,
         disableServerSignature: true,
@@ -159,65 +159,65 @@ module.exports = {
         pingable: false,
         preventScriptInjection: true,
         textCompression: [
-          "text/html",
-          "application/javascript",
-          "text/css",
-          "image/png"
-        ]
-      }
+          'text/html',
+          'application/javascript',
+          'text/css',
+          'image/png',
+        ],
+      },
     },
     {
-      use: "@allanchain/gridsome-plugin-pwa",
-      options: options["default"]
-    }
+      use: '@allanchain/gridsome-plugin-pwa',
+      options: options['default'],
+    },
   ],
   templates: {
     Blog: [
       {
-        path: "/blog/:title",
-        component: "./src/templates/BlogEntry.vue"
+        path: '/blog/:title',
+        component: './src/templates/BlogEntry.vue',
       },
       {
-        name: "sample",
-        path: node => {
-          return `/sample/${slugify(node.title)}`;
-        }
-      }
+        name: 'sample',
+        path: (node) => {
+          return `/sample/${slugify(node.title)}`
+        },
+      },
     ],
     Category: [
       {
-        path: "/category/:title",
-        component: "./src/templates/Category.vue"
-      }
+        path: '/category/:title',
+        component: './src/templates/Category.vue',
+      },
     ],
     SampleTag: [
       {
-        path: "/sample_tags/:title",
-        component: "./src/templates/SampleTags.vue"
-      }
+        path: '/sample_tags/:title',
+        component: './src/templates/SampleTags.vue',
+      },
     ],
     Sample: [
       {
-        path: "/sample/:title",
-        component: "./src/templates/SampleEntry.vue"
-      }
+        path: '/sample/:title',
+        component: './src/templates/SampleEntry.vue',
+      },
     ],
     Tag: [
       {
-        path: "/tag/:title",
-        component: "./src/templates/Tag.vue"
-      }
-    ]
+        path: '/tag/:title',
+        component: './src/templates/Tag.vue',
+      },
+    ],
   },
   transformers: {
     remark: {
-      externalLinksTarget: "_blank",
-      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-      plugins: [require("./packages/gridsome-plugin-remark-figure")]
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      plugins: [require('./packages/gridsome-plugin-remark-figure')],
     },
-    json: {}
+    json: {},
   },
-  chainWebpack: config => {
-    config.resolve.alias.set("@images", "@/assets/images");
-  }
-};
+  chainWebpack: (config) => {
+    config.resolve.alias.set('@images', '@/assets/images')
+  },
+}

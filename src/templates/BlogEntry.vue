@@ -6,7 +6,7 @@
       <!-- header image -->
       <figure class="pb-8 md:pb-16">
         <picture class="block">
-          <source :srcset="$page.blog.image" type="image/webp"/>
+          <source :srcset="$page.blog.image" type="image/webp" />
           <g-image
             class="object-cover h-24 md:h-48 w-full pb-0 md:pb-2"
             :src="$page.blog.image"
@@ -39,30 +39,30 @@
 </template>
 
 <page-query>
-  query($id: ID!) {
-    blog(id: $id) {
+query($id: ID!) {
+  blog(id: $id) {
+    title
+    path
+    image
+    image_caption
+    excerpt
+    content
+    humanTime: created(format: "Do MMMM YYYY")
+    datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
+    category {
       title
       path
-      image
-      image_caption
-      excerpt
-      content
-      humanTime : created(format:"Do MMMM YYYY")
-      datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
-      category {
-        title
-        path
-      }
-      author {
-        name
-      }
-      tags {
-        id
-        title
-        path
-      }
+    }
+    author {
+      name
+    }
+    tags {
+      id
+      title
+      path
     }
   }
+}
 </page-query>
 
 <script>
@@ -70,7 +70,7 @@ export default {
   metaInfo() {
     return {
       title: this.$page.blog.title,
-    };
+    }
   },
-};
+}
 </script>

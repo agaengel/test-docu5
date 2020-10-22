@@ -5,11 +5,7 @@
     >
       <div class="text-base text-center md:text-left md:text-xl pb-8 md:pb-0">
         © {{ new Date().getFullYear() }} - Powered by
-        <a
-          href="https://buildwith.ionos.com"
-          rel="noopener"
-          target="_blank"
-        >
+        <a href="https://buildwith.ionos.com" rel="noopener" target="_blank">
           Builtwith IONOS</a
         >
       </div>
@@ -50,10 +46,10 @@
 export default {
   methods: {
     socialIcon(element) {
-      return `/icons.svg#icon-${element.icon}`;
+      return `/icons.svg#icon-${element.icon}`
     },
   },
-};
+}
 </script>
 
 <static-query>

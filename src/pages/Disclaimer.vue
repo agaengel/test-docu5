@@ -2,9 +2,7 @@
   <Layout>
     <section class="container mx-auto">
       <div class="subheader">
-        <h1>
-          Disclaimer
-        </h1>
+        <h1>Disclaimer</h1>
         <p>
           This version of
           <a href="https://buildwith.ionos.com/">BuildWith IONOS</a> is bleeding
@@ -19,16 +17,13 @@
           to share your thoughts with us.
         </p>
         <h3>Custom domains &amp; SSL</h3>
-        <p>
-          Custom domains &amp; SSL is not implemented yet.
-        </p>
+        <p>Custom domains &amp; SSL is not implemented yet.</p>
         <h3>Limits</h3>
         <p>
-          You can build max. 5 projects. You can use up to 25 feature branches for all those projects..
+          You can build max. 5 projects. You can use up to 25 feature branches
+          for all those projects..
         </p>
-        <p>
-          Max. quota of one instance is 500 MB for now.
-        </p>
+        <p>Max. quota of one instance is 500 MB for now.</p>
         <h3>UX design</h3>
         <p>
           The tool is build with focus on function first by developers. No UX
@@ -46,11 +41,15 @@
           developers are English only.
         </p>
         <h3>Legal requirements</h3>
-        <p>
-          A legal compliance check is outstanding.
-        </p>
+        <p>A legal compliance check is outstanding.</p>
         <h3>Privacy note</h3>
-        <p>To get more insights during the IONOS internal test phase we enabled error logging and tracing via <a href="https://sentry.io" target="_blank" rel="noopener">sentry.io</a>.</p>
+        <p>
+          To get more insights during the IONOS internal test phase we enabled
+          error logging and tracing via
+          <a href="https://sentry.io" target="_blank" rel="noopener"
+            >sentry.io</a
+          >.
+        </p>
         <h3>General</h3>
         <p>
           BuildWith IONOS is provided "as is" and you use the application at
@@ -64,7 +63,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Disclaimer",
+    title: 'Disclaimer',
   },
-};
+}
 </script>

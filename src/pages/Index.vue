@@ -2,12 +2,8 @@
   <Layout>
     <section class="container mx-auto">
       <div class="subheader">
-        <h1>
-          Welcome to BuildWith IONOS
-        </h1>
-        <p>
-          Get your web project live in seconds
-        </p>
+        <h1>Welcome to BuildWith IONOS</h1>
+        <p>Get your web project live in seconds</p>
       </div>
       <!-- hero -->
       <div
@@ -59,9 +55,7 @@
         </picture>
       </div>
       <!-- step-by-step description -->
-      <h2>
-        Get your next web project live in seconds
-      </h2>
+      <h2>Get your next web project live in seconds</h2>
 
       <div class="flex flex-wrap lg:flex-no-wrap justify-center pb-8 md:pb-16">
         <div
@@ -135,9 +129,7 @@
 
       <!-- features -->
       <!-- free SVG icons for popular brands: https://simpleicons.org/ or https://github.com/simple-icons/simple-icons/tree/develop/icons -->
-      <h2>
-        Hit the ground running
-      </h2>
+      <h2>Hit the ground running</h2>
       <p>
         Setting up your next project with BuildWith IONOS brings up essential
         features just from the beginning.
@@ -164,9 +156,7 @@
                 </div>
               </div>
               <div class="ml-4 md:mb-8">
-                <h3>
-                  BuildWith IONOS makes it simple
-                </h3>
+                <h3>BuildWith IONOS makes it simple</h3>
                 <p>
                   Publish modern web projects right from your git repository.
                   Use your favorite framework. You don't need to be an expert to
@@ -195,9 +185,7 @@
                 </div>
               </div>
               <div class="ml-4 md:mb-8">
-                <h3>
-                  Automate your work
-                </h3>
+                <h3>Automate your work</h3>
                 <p>
                   Automate your next web project from the beginning. Don't
                   repeat yourself and rely on proven build steps and produce
@@ -227,9 +215,7 @@
                 </div>
               </div>
               <div class="ml-4 md:mb-8">
-                <h3>
-                  Preview your changes
-                </h3>
+                <h3>Preview your changes</h3>
                 <p>
                   Generate a full preview of your web project with every git
                   push. Apply atomic switch to live.
@@ -257,12 +243,8 @@
                 </div>
               </div>
               <div class="ml-4 md:mb-8">
-                <h3>
-                  Ship directly to the edge
-                </h3>
-                <p>
-                  Always fast. Always online. Always a hit.
-                </p>
+                <h3>Ship directly to the edge</h3>
+                <p>Always fast. Always online. Always a hit.</p>
               </div>
             </div>
           </li>
@@ -358,9 +340,7 @@
         </div>
       </div>
       <!-- coming soon announcement -->
-      <h4>
-        (Coming soon) LAMP stack support
-      </h4>
+      <h4>(Coming soon) LAMP stack support</h4>
       <!-- listing with icons -->
       <div class="flex flex-grow-0 flex-wrap justify-center px-4 pb-8 md:pb-16">
         <a href="https://www.php.net/" rel="noopener" target="_blank">
@@ -419,7 +399,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Home"
-  }
-};
+    title: 'Home',
+  },
+}
 </script>
