@@ -6,5 +6,5 @@
   "prepare_name": "Prepare Project build environment",
   "build_ref": "yarn",
   "build_name": "Build node project",
-  "dist_folder": "public"
+  "dist_folder": "build"
 }
