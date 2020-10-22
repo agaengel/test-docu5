@@ -23,26 +23,26 @@
                 prepare:<br>
                 &nbsp;&nbsp;name: <span class="text-white">{{ config.prepare_name }}</span><br>
                 <span v-if="config.prepare.commands.length > 1">
-                  &nbsp;&nbsp;commands:  <span class="text-white">|</span><br>
+                  &nbsp;&nbsp;command:  <span class="text-white">|</span><br>
                 <span v-for="command in  config.prepare.commands ">
                   &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-white">{{ command }}</span><br>
                 </span>
               </span>
               <span v-else>
-                &nbsp;&nbsp;commands: <span class="text-white">{{ config.prepare.commands[0] }}</span><br>
+                &nbsp;&nbsp;command: <span class="text-white">{{ config.prepare.commands[0] }}</span><br>
               </span>
               </span>
               <span v-if="config.build">
                 build:<br>
                 &nbsp;&nbsp;name: <span class="text-white">{{ config.build_name }}</span><br>
                 <span v-if="config.build.commands.length > 1">
-                  &nbsp;&nbsp;commands:  <span class="text-white">|</span><br>
+                  &nbsp;&nbsp;command:  <span class="text-white">|</span><br>
                     <span v-for="command in  $page.build.template.build.commands ">
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-white">{{ command }}</span><br>
                     </span>
                 </span>
                 <span v-else>
-                  &nbsp;&nbsp;commands: <span class="text-white">{{ config.build.commands[0] }}</span><br>
+                  &nbsp;&nbsp;command: <span class="text-white">{{ config.build.commands[0] }}</span><br>
                 </span>
                 <span v-if="config.build.environment.length > 0">
                   &nbsp;&nbsp;environment: <br>
