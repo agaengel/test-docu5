@@ -9,6 +9,6 @@ image_caption: Reactjs.org
 git_url: https://github.com/reactjs/reactjs.org
 author: alex
 type: sample
-template_ref: reactjs
+template_ref: gatsby
 ---
 The Website [reactjs](https://reactjs.org/) uses [Gatsby]() with [nodejs](https://nodejs.org).
