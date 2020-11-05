@@ -22,14 +22,14 @@
     "postcss": "^8.1.1",
     "postcss-import": "^13.0.0",
     "postcss-nested": "^5.0.1",
-    "prism-themes": "^1.4.0",
+    "prism-themes": "^1.5.0",
     "register-service-worker": "^1.7.1",
-    "sass": "^1.26.11",
-    "sass-loader": "^10.0.3",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
     "sharp": "^0.26.2",
     "vue-eslint-parser": "^7.1.1",
-    "vue-good-table": "^2.21.0",
-    "webpack": "^5.0.0"
+    "vue-good-table": "^2.21.1",
+    "webpack": "^5.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^4.5.8",
