@@ -1,6 +1,6 @@
 ---
 title: ReactJs Starter
-tags: [react,node]
+tags: [react,nodejs]
 category: sample
 excerpt: ReactJs Starter
 created: 2020-10-22T14:00:00Z
@@ -11,5 +11,5 @@ author: alex
 type: sample
 template_ref: reactjs
 ---
-The Project is a small starter for [Reactjs](https://reactjs.org/) that shows + / - Buttons and a counter with the state of the buttons.
+The Project is a small starter for [Reactjs](/sample_tags/react) that shows + / - Buttons and a counter with the state of the buttons.
 

@@ -1,6 +1,6 @@
 ---
 title: Reactjs.org
-tags: [gatsby,node]
+tags: [gatsby,nodejs, react]
 category: sample
 excerpt: Reactjs.org page build with Gatsby
 created: 2020-10-06T15:00:00Z
@@ -11,4 +11,4 @@ author: alex
 type: sample
 template_ref: gatsby
 ---
-The Website [reactjs](https://reactjs.org/) uses [Gatsby]() with [nodejs](https://nodejs.org).
+The Website [https://reactjs.org/](https://reactjs.org/) uses [Gatsby](/sample_tags/gatsby) with [Nodejs](https://nodejs.org) to generate the pages.

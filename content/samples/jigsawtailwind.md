@@ -1,6 +1,6 @@
 ---
 title: Jigsaw - Tailwind
-tags: [jigsaw, tailwind, php, node]
+tags: [jigsaw, tailwindcss, php, nodejs, composer, webpack]
 category: sample
 excerpt: Demo static site project using jigsaw and tailwind
 created: 2020-10-01T16:00:00Z
@@ -11,6 +11,6 @@ author: alex
 type: sample
 template_ref: jigsawtailwind
 ---
-A demo project building a static site with [Jigsaw](http://jigsaw.tighten.co/) and [Tailwind CSS](https://tailwindcss.com/)
+A demo project building a static site with [Jigsaw](/sample_tags/jigsaw) and [Tailwind](/sample_tags/tailwindcss)
 
-This project uses [php](https://www.php.net/) with [Composer](https://getcomposer.org/) as well as [webpack](https://webpack.js.org/) with [nodejs](https://nodejs.org)
+This project uses [php](/sample_tags/php) with [Composer](/sample_tags/composer) as well as [webpack](/sample_tags/webpack) with [nodejs](/sample_tags/node-js)
