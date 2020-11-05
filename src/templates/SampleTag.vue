@@ -19,15 +19,15 @@
         v-if="$page.sampleTag.description"
         v-html="$page.sampleTag.description"
       ></p>
-      <div
-        v-for="element in $page.sampleTag.belongsTo.edges"
-        :key="element.node.id"
-      >
-        <g-link
-          class="inline-block border border-pink-300 m-2 px-4 py-2 text-pink-500 text-xs font-semibold rounded hover:text-white hover:bg-pink-500 hover:border-pink-500"
-          :to="element.node.path"
-          >{{ element.node.title }}
-        </g-link>
+
+      <div class="flex flex-wrap -mx-2">
+        <div
+          class="w-full max-w-sm lg:w-1/3 mb-8 px-2"
+          v-for="element in $page.sampleTag.belongsTo.edges"
+          :key="element.node.id"
+        >
+          <SampleCard :item="element" />
+        </div>
       </div>
     </section>
   </Layout>
@@ -46,6 +46,12 @@ query($id: ID!) {
             id
             title
             path
+            image(height: 300, width: 423, fit: cover)
+            humanTime: created(format: "Do MMMM YYYY")
+            datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
+            author {
+              name
+            }
           }
         }
       }
@@ -55,9 +61,14 @@ query($id: ID!) {
 </page-query>
 
 <script>
+import SampleCard from "@/components/SampleCard";
+
 export default {
   metaInfo: {
     title: 'SampleTags',
+  },
+  components: {
+    SampleCard,
   },
 }
 </script>
