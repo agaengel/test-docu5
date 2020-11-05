@@ -10,9 +10,6 @@ module.exports = {
   variants: {
     outline: ['focus'],
   },
-  corePlugins: {
-    listStyleType: 'list-inside',
-  },
   theme: {
     colors: {
       transparent: 'transparent',
@@ -129,8 +126,5 @@ module.exports = {
         900: '#702459',
       },
     },
-  },
-  listStyleType: {
-    disc: 'disc',
   },
 }
