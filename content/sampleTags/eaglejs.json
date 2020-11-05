@@ -1,0 +1,6 @@
+{
+  "id": "eaglejs",
+  "url": "https://github.com/zulko/eagle.js/",
+  "title": "Eagle.js",
+  "description": "Eagle.js - A slideshow framework for hackers <ul class=\"pt-5 list-disc list-inside\"><li>Slideshow system built on top of the Vue.js</li><li>    Supports animations, themes, interactive widgets (for web demos)</li><li>Easy to reuse components, slides and styles across presentations</li><li>Lightweight core and various helpful extensions</li><li>All APIs public, maximum hackability</li></ul>"
+}
