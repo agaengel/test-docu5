@@ -61,7 +61,7 @@ query($id: ID!) {
 </page-query>
 
 <script>
-import SampleCard from "@/components/SampleCard";
+import SampleCard from '@/components/SampleCard'
 
 export default {
   metaInfo: {
