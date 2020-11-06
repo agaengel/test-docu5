@@ -2,7 +2,7 @@
 title: Dummyimage
 tags: [plain, html, php]
 category: sample
-excerpt: Php porject generation dummy images
+excerpt: Php project generation dummy images
 created: 2020-10-09T09:00:00Z
 image: ./images/website-dummyimage.png
 image_caption: Dummyimage

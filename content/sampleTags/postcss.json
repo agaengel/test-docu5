@@ -1,0 +1,6 @@
+{
+  "id": "postcss",
+  "url": "https://postcss.org/",
+  "title": "PostCss",
+  "description": "PostCSS is a framework to develop CSS tools. It can be used to develop a template language such as Sass and LESS.<br><br>The PostCSS core consists of:<br><br>    CSS parser that generates an abstract syntax tree<br>    Set of classes that comprises the tree<br>    CSS generator that generates a CSS line for the object tree<br>    Code map generator for the CSS changes made<br><br>Features are made available through plugins. The plugins are small programs working with the object tree. After the core has transformed a CSS string into an object tree, the plugins analyze and change the tree. Then PostCSS generates a new CSS string for the plugin-changed tree.<br><br>PostCSS and its plugins are written in JavaScript and distributed through npm, which offer APIs for low-level JavaScript operations.<br><br>There are official tools making it possible to use PostCSS with build systems such as Webpack, Gulp, and Grunt. There is also a console interface available. Browserify or Webpack can be used to open PostCSS in a browser. "
+}

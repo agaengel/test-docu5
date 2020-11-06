@@ -1,0 +1,15 @@
+{
+  "id": "hugo",
+  "name": "Setup Hugo",
+  "action": "peaceiris/actions-hugo@v2",
+  "properties": [
+    {
+      "key": "extended",
+      "value": "true"
+    },
+    {
+      "key": "hugo-version",
+      "value": "0.78.1"
+    }
+  ]
+}

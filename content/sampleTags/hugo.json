@@ -1,0 +1,6 @@
+{
+  "id": "hugo",
+  "url": "https://gohugo.io/",
+  "title": "Hugo",
+  "description": "Hugo is a static site generator written in Go. It is optimized for<br>speed, easy use and configurability. Hugo takes a directory with content and<br>templates and renders them into a full html website.<br><br>Hugo makes use of Markdown files with front matter for meta data.<br><br>A typical website of moderate size can be<br>rendered in a fraction of a second. A good rule of thumb is that Hugo<br>takes around 1 millisecond for each piece of content.<br><br>It is written to work well with any<br>kind of website including blogs, tumbles and docs."
+}
