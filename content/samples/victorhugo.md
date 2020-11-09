@@ -2,7 +2,7 @@
 title: Victor Hugo
 tags: [hugo, webpack, golang, nodejs, postcss, babel]
 category: sample
-excerpt: Php porject generation dummy images
+excerpt: A Hugo boilerplate for creating truly epic websites
 created: 2020-11-06T08:00:00Z
 image: ./images/website-victor-hugo.png
 image_caption: Victor Hugo
