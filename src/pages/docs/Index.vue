@@ -13,11 +13,18 @@
         </p>
         <h2>Step 1: Start</h2>
         <p>
-          <button
-            class="text-white font-bold rounded-full bg-blue-600 inline-flex items-center shadow-lg focus:outline-none px-8 my-6 py-4"
+          <a
+            class="self-center md:self-start pb-8 md:pb-0"
+            href="https://buildwith.ionos.com/setup?repo=https://github.com/buildwith-ionos/buildwith-ionos-starter"
+            rel="noopener"
+            target="_blank"
           >
-            <span>Drop to IONOS.space</span>
-          </button>
+            <button
+              class="text-white font-bold rounded-full bg-blue-600 inline-flex items-center shadow-lg focus:outline-none px-8 my-6 py-4"
+            >
+              <span>Drop to IONOS.space</span>
+            </button>
+          </a>
           is probably the easiest way to start.
         </p>
         <p>
