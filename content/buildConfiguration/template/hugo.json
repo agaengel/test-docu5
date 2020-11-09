@@ -1,0 +1,8 @@
+{
+  "id": "hugo",
+  "title": "Hugo",
+  "setup_ref": ["hugo"],
+  "build_ref": "hugo",
+  "build_name": "Build project",
+  "dist_folder": "public"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "hugo",
+  "commands": [
+    "hugo --gc --minify -b $SITE_URL"
+  ],
+  "environment": [
+    {
+      "key": "SITE_URL",
+      "value": "${{ steps.project.outputs.site-url }}"
+    }
+  ]
+}
