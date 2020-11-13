@@ -40,6 +40,7 @@ query {
       node {
         id
         title
+        excerpt
         path
         image(height: 300, width: 423, fit: cover)
         humanTime: created(format: "Do MMMM YYYY")

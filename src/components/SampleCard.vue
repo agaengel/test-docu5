@@ -14,12 +14,15 @@
           item.node.title
         }}</g-link>
       </h2>
-      <div class="flex flex-col text-base md:flex mb-4">
+      <div class="flex flex-col md:flex mb-4 text-xl">
+        {{ item.node.excerpt }}
+      </div>
+      <div class="flex flex-col md:flex mb-4 text-sm">
         <div>{{ item.node.author.name }}</div>
         <div class="hidden md:block px-2"></div>
         <time :datetime="item.node.datetime">{{ item.node.humanTime }}</time>
       </div>
-      <ul class="flex flex-wrap border-t border-gray-100">
+      <ul class="flex flex-wrap justify-center border-t border-gray-100">
         <li class="mr-2 mt-2" v-for="tag in item.node.tags" :key="tag.id">
           <g-link
             :to="tag.path"

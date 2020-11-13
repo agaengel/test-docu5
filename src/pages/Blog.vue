@@ -40,6 +40,7 @@ query {
       node {
         id
         title
+        excerpt
         samplepath: path(to: "sample")
         path
         image(height: 300, width: 423, fit: cover)
