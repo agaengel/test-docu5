@@ -1,0 +1,6 @@
+{
+  "id": "gatsby",
+  "url": "https://www.gatsbyjs.com/",
+  "title": "Gatsby",
+  "description": "GatsbyJS is a React-based, GraphQL powered, static site generator.<br>What does that even mean?  Well, it weaves together the best parts of react, webpack, react-router, GraphQL, and other front-end tools in to one very enjoyable developer experience. Don’t get hung up on the moniker ‘static site generator’.  That term has been around for a while, but Gatsby is far more like a modern front-end framework than a static site generator of old."
+}
