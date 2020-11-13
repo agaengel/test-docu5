@@ -24,7 +24,7 @@
           <g-link
             :to="tag.path"
             class="inline-block border border-pink-300 px-4 py-2 text-pink-500 text-xs font-semibold rounded hover:text-white hover:bg-pink-500 hover:border-pink-500"
-          >{{ tag.title }}
+            >{{ tag.title }}
           </g-link>
         </li>
       </ul>
