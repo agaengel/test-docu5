@@ -8,7 +8,7 @@
       <div class="content">
         <div class="flex flex-wrap -mx-2">
           <div
-            class="w-full max-w-sm lg:w-1/3 mb-8 px-2"
+            class="w-full flex-none max-w-sm lg:w-1/3 mb-8 px-2"
             v-for="entry in $page.allSample.edges"
             :key="entry.node.id"
           >
@@ -46,6 +46,11 @@ query {
         datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
         author {
           name
+        }
+        tags {
+          id
+          title
+          path
         }
       }
     }
