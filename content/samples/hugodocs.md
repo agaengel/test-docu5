@@ -12,3 +12,5 @@ type: sample
 template_ref: hugo
 ---
 Documentation site for Hugo, the very fast and flexible static site generator built with love in Go.
+
+You can find the site [here](https://gohugo.io/documentation/).
