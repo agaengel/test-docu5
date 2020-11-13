@@ -2,7 +2,7 @@
 title: Jigsaw - Tailwind
 tags: [jigsaw, tailwindcss, php, nodejs, composer, webpack]
 category: sample
-excerpt: Demo static site project using jigsaw and tailwind
+excerpt: Demo static site project using Jigsaw and Tailwindcss
 created: 2020-10-01T16:00:00Z
 image: ./images/website-jigsaw-tailwind.png
 image_caption: Jigsaw - Tailwind
