@@ -46,11 +46,17 @@ query($id: ID!) {
             id
             title
             path
+            excerpt
             image(height: 300, width: 423, fit: cover)
             humanTime: created(format: "Do MMMM YYYY")
             datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
             author {
               name
+            }
+            tags {
+              id
+              title
+              path
             }
           }
         }
